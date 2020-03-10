@@ -49,6 +49,6 @@ install: hello
 
 uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/hello
-	rm -f $(DESTDIR)$(MANPREFIX)/man1/st.1
+	rm -f $(DESTDIR)$(MANPREFIX)/man1/hello.1
 
 .PHONY: all options clean dist install uninstall
