@@ -1,0 +1,34 @@
+hello - example program using Suckless packaging style
+------------------------------------------------------
+hello is exactly like any other 'hello world' program, just packaged
+differently.
+
+Requirements
+------------
+In order to build hello you need a C compiler.
+
+Installation
+------------
+Optionally, edit config.h to customize your greeting.
+
+Edit config.mk to match your local setup (hello is installed into
+the /usr/local namespace by default).
+
+Afterwards enter the following command to build and install hello (if
+necessary as root):
+
+    make clean install
+
+Running hello
+-------------
+If there were complications to running hello, they would be documented
+here. But you just run:
+
+    hello
+
+See the man page for additional details.
+
+Credits
+-------
+Written by Serhei Makarov <me at serhei dot io> in imitation of the
+code at <https://suckless.org>.
