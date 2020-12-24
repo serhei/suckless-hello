@@ -7,6 +7,10 @@ Requirements
 ------------
 In order to build hello you need a C compiler.
 
+The man page hello.1 is generated with Pandoc as follows:
+
+    pandoc --standalone --to man hello.1.md -o hello.1
+
 Installation
 ------------
 Optionally, edit config.h to customize your greeting.
