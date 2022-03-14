@@ -28,6 +28,9 @@ $(OBJ): config.h config.mk
 hello: $(OBJ)
 	$(CC) -o $@ $(OBJ) $(STLDFLAGS)
 
+hello.1: hello.1.md
+	pandoc --standalone --to man hello.1.md -o hello.1
+
 clean:
 	rm -f hello $(OBJ) hello-$(VERSION).tar.gz
 
